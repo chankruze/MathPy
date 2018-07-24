@@ -26,8 +26,27 @@ print("4.Divide")
 # Take input from the user
 choice = input("Enter choice(1/2/3/4):")
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+while True:
+    try:
+        # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
+        input_num_01 = int(input("Enter a number: "))
+        input_num_02 = int(input("Enter a number: "))
+    except ValueError:
+        print("/////////////////////////////////////////////////////")
+        print("//   Sorry, I did't understant that.               //")
+        print("//   You must fill out a valid value to proceed !  //")
+        print("/////////////////////////////////////////////////////")
+        continue
+    else:
+        #input was successfully parsed!
+        #we're ready to exit the loop.
+        break
+
+num1 = input_num_01
+num2 = input_num_02
+print()
+print(num1)
+print(num2)
 
 if choice == '1':
    print(num1,"+",num2,"=", add(num1,num2))

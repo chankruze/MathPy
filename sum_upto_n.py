@@ -1,9 +1,8 @@
 # Created by chankruze
-# Python program to check if the input number is prime or not
-# Initial Value
-num = 407
+# Python program to find the sum of natural numbers up to n where n is provided by user
 
-# take input from the user
+# Initial Value
+num = 25
 
 while True:
     try:
@@ -19,23 +18,15 @@ while True:
         #input was successfully parsed!
         #we're ready to exit the loop.
         break
-		
+
 num = input_num
 
-# prime numbers are greater than 1
-if num > 1:
-   # check for factors
-   for i in range(2,num):
-       if (num % i) == 0:
-           print(num,"is not a prime number")
-           print(i,"times",num//i,"is",num)
-           break
-   else:
-       print()
-       print(str(num) + " is a prime number")
-       
-# if input number is less than
-# or equal to 1, it is not prime
+if num < 0:
+   print("Enter a positive number")
 else:
-    print()
-    print(str(num) + " is not a prime number")
+   sum = 0
+   # use while loop to iterate un till zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is",sum)

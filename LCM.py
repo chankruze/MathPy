@@ -31,7 +31,7 @@ while True:
     except ValueError:
         print("/////////////////////////////////////////////////////")
         print("//   Sorry, I did't understant that.               //")
-        print("//   You must fill out a value to compare with !   //")
+        print("//   You must fill out a valid value to proceed !  //")
         print("/////////////////////////////////////////////////////")
         continue
     else:
