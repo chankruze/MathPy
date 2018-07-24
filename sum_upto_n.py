@@ -1,13 +1,15 @@
 # Created by chankruze
-# Python program to find the sum of natural numbers up to n where n is provided by user
+#Python program to find the sum of natural numbers up to 'n' where 'n' is provided by user
 
+print("Python program to find the sum of natural numbers up to 'n' where 'n' is provided by user")
+print()
 # Initial Value
 num = 25
 
 while True:
     try:
         # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
-        input_num = int(input("Enter a number: "))
+        input_num = int(input("Enter a positive number : "))
     except ValueError:
         print("/////////////////////////////////////////////////////")
         print("//   Sorry, I did't understant that.               //")

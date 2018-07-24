@@ -1,5 +1,9 @@
 # Created by chankruze
 # Python program to check if the input number is prime or not
+
+print("Python program to check if the input number is prime or not")
+print()
+
 # Initial Value
 num = 407
 
@@ -8,7 +12,7 @@ num = 407
 while True:
     try:
         # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
-        input_num = int(input("Enter a number: "))
+        input_num = int(input("Enter a number : "))
     except ValueError:
         print("/////////////////////////////////////////////////////")
         print("//   Sorry, I did't understant that.               //")

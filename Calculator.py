@@ -29,8 +29,8 @@ choice = input("Enter choice(1/2/3/4):")
 while True:
     try:
         # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
-        input_num_01 = int(input("Enter a number: "))
-        input_num_02 = int(input("Enter a number: "))
+        input_num_01 = int(input("Enter first number: "))
+        input_num_02 = int(input("Enter second number: "))
     except ValueError:
         print("/////////////////////////////////////////////////////")
         print("//   Sorry, I did't understant that.               //")
