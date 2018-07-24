@@ -1,3 +1,4 @@
+# Created by chankruze
 # Python Program to find the L.C.M. of two input number
 
 # define a function
@@ -18,13 +19,29 @@ def lcm(x, y):
        greater += 1
 
    return lcm
+# Initial Value
+num_01 = 24
+num_02 = 58
 
-# change the values of num1 and num2 for a different result
-num1 = 54
-num2 = 24
+while True:
+    try:
+        # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
+        input_01 = int(input("Enter first number: "))
+        input_02 = int(input("Enter second number: "))
+    except ValueError:
+        print("/////////////////////////////////////////////////////")
+        print("//   Sorry, I did't understant that.               //")
+        print("//   You must fill out a value to compare with !   //")
+        print("/////////////////////////////////////////////////////")
+        continue
+    else:
+        #input was successfully parsed!
+        #we're ready to exit the loop.
+        break
+		
+num_01 = input_01
+num_02 = input_02
 
-# uncomment the following lines to take input from the user
-#num1 = int(input("Enter first number: "))
-#num2 = int(input("Enter second number: "))
+print()
+print(">_The L.C.M. of" + str(num_01) + " and " + str(num_02) + " is " + str(lcm(num_01, num_02)))
 
-print("The L.C.M. of", num1,"and", num2,"is", lcm(num1, num2))
